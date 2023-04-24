@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting minutes of CSE 110 Team 11</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 1200px;
+        }
+    </style>
+    <link rel = "stylesheet" href = "styles.css">
   </head>
 
 
   <body>
     <header> 
-        <h1>CSE 110 team 11 metting minutes Ice Breaking</h1>
+        <h1 style="color: aqua;">CSE 110 team 11 metting minutes Ice Breaking</h1>
     </header>
     <!--sub titles -->
-    <h2>1. Break Ice activity</h2>
+    <h2 class="act1">1. Break Ice activity</h2>
     <h2>2. meeting time 2023/4/15</h2> 
     <h2>3. Attendance list</h2>
 
-        <ol>    
+        <ol id="names">    
             <li>Junyi Wu</li>
             <li>Angelia Zhang</li>
             <li>Gagan Gopaliaiah</li>
@@ -27,7 +34,7 @@
             <li>Vincent Vo</li>
         </ol>
     <h2> 4. Agenda</h2>
-        <ul>
+        <ul id="TODOS">
             <li><input type="checkbox"> ice breaking</li>
             <li><input type="checkbox"> assignment</li>
             <li><input type="checkbox"> abc</li>
@@ -57,7 +64,8 @@
         Your browser does not support the audio element.
     </audio>
       
-    <h2> 10. Questions</h2>
+    <h2 class="question"> 10. Questions</h2>
+    <a title="test">I am extra line to test attribute selector</a>
     <h4>
         team name suggestion:
     </h4>
@@ -124,9 +132,35 @@
 
     <button type="button">submit</button>
 
-<footer>
-    <h6>Footer</h6>
-</footer>
+    <div class="flexBox">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="box em">I am 10em wide</div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+    </div>
+
+    <div>
+        <h2>Descendant Combinator</h2>
+    </div>
+    <p>Here is a paragraph.</p>
+    <code>Here is some code.</code>
+    <span>And here is a red span!</span>
+    <span>And this is a red span!</span>
+
+    <footer>
+        <h6>Footer</h6>
+    </footer>
     
     
         

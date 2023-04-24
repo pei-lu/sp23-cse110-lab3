@@ -1,0 +1,108 @@
+/*crate styles.css file to edit the style of html page*/
+/* use class selector  .class{} */
+/*change the color of the first element*/
+
+.act1{
+    color: blue;
+}
+/*change background color, universal selector*/
+*{
+    background-color : gray;
+}
+
+@media (width: 360px) {
+    div {
+    color: yellow;
+    }
+}
+/*id slector to change margin/padding of attendence list long*/
+#names{
+    margin-top: 1cm;
+    margin-bottom :10px;
+    margin-left: 10Q;
+    margin-right: 3in;
+    padding-top: 1em;
+    padding-bottom: 2ch;
+    padding-left: 5lh;
+    padding-right: 1em;
+}
+
+/* change the unordered list style*/
+#TODOS{
+    margin: 1cm 0.5ch 0.5in 5pc;
+    padding: 2ch 2rem 1ex 1vw;
+}
+
+/*element selector to change style of subtitle*/
+h2{
+    color: #2376b7;
+    text-decoration: underline overline;
+    text-align: center;
+}
+/* change font using attribute selector*/
+a[title]{
+    font: 1em Muyao-Softbrush;
+}
+
+/* Pseudo-class Selector (e.g. p:hover)  change color*/
+button:hover{
+    color: green;
+}
+button:active{
+    color: cyan;
+}
+/* Selector List (element, element)  change video/image position size*/
+img,video{
+    height: 10cm;
+    width: 10cm;
+    position: sticky;
+}
+
+/*add flexbox and grid*/
+.flexBox{
+    display: flex;
+    background-color: #2376b7;
+    height : 2cm;
+    width: 3in;
+}
+.flexBox > div{
+    background-color: #2376b7;
+    margin : 10px;
+    padding : 10px;
+    font-size: 15px;
+    height : 2cm;
+}
+
+.grid{
+    display: grid;
+    background-color: rgba(69,183,135,0.5);
+    grid-template-columns: auto auto auto auto;
+    padding : 10px;
+    margin: 1cm;
+    width : 10cm;
+}
+/* Child Combinator */
+.grid > div{
+    background-color: rgba(69,183,135,0.5);
+    text-align: center;
+    position: static;
+}
+/* Descendant Combinator */
+div h2{
+    color:yellowgreen;
+}
+
+/* General sibling combinator */
+p ~ span {
+    color: blueviolet;
+}
+
+/*adjacent siblin combinator change the second element in list to blue*/
+li:first-of-type + li {
+    color: blue;
+}
+
+/* Combining Two Selectors */
+h2.question{
+    color:aquamarine;
+}
